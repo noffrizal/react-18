@@ -9,7 +9,7 @@ const RegisterPage = () => {
             <FormRegister />
             <p className="text-sm mt-5 text-center">
                 Have an account?
-                <Link to="/login" className="font-bold text-blue-600">Login here</Link>
+                <Link to="/login" className="font-bold text-blue-600"> Login here</Link>
             </p>
         </AuthLayouts>
     )
