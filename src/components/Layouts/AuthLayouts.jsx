@@ -3,6 +3,7 @@ import FormLogin from "../Fragments/FormLogin"
 const AuthLayouts = (props) => {
     const { children, title } = props
     return (
+        <div className='min-h-screen items-center flex justify-center'>
         <div className="flex gap-x-3">
             <div className="w-full max-w-xs">
                 <h1 className="text-3xl text-blue-600 mb-2">{title}</h1>
@@ -11,6 +12,7 @@ const AuthLayouts = (props) => {
                 </p>
                 {children}
             </div>
+        </div>
         </div>
     )
 }
