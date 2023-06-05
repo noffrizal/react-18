@@ -4,11 +4,13 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import LoginPage from './Pages/login'
 import RegisterPage from './Pages/register'
+import ErrorPage from './Pages/404'
 
 const router = createBrowserRouter([
   {
     path:'/',
     element: <div>Hello World</div>,
+    errorElement: <ErrorPage />
   },
   {
     path:'/login',
