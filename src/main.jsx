@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import './index.css'
+import ErrorPage from './Pages/404'
 import LoginPage from './Pages/login'
 import RegisterPage from './Pages/register'
-import ErrorPage from './Pages/404'
+import ProductsPage from './Pages/products'
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path:'/register',
     element: <RegisterPage />,
+  },
+  {
+    path:'/products',
+    element: <ProductsPage />,
   },
 ])
 
